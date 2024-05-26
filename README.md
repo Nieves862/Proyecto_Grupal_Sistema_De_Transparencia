@@ -5,14 +5,14 @@
 
 ## 👥 Integrantes del Grupo 15
 
-| Nombre | Apellido | DNI | E-mail            | Link |
-|--------|----------|-----|-------------------|------|
-| Mónica Alejandra| Dominguez | 20941009 | mdominguez.conservatorio@gmail.com | https://github.com/Mdominguez1969 |
-| Valeria Nieves | Villalba | 26970862 | vnvillalba@escuelasproa.edu.ar | https://github.com/Nieves862  |
-| Leandro Omar | Sanchez | 38503454 | leandrosanchez.net@gmail.com | https://github.com/LeandroSanchez94 |
-| Gabriel | Vargas Salas | 32204604 | gabrielvargasds25@gmail.com | https://github.com/GabrielVargasds |
-| Sabrina Ximena | Rivadera | 1111111 | srivadera@gmail.com| https://github.com/SabriRivadera |
-| Andra Paola | Testa | 11111111 | andreaptesta@gmail.com | https://github.com/PaoTes |
+| Nombre | Apellido | DNI | E-mail            | Link | Actividad   |
+|--------|----------|-----|-------------------|------|-------------|
+| Mónica Alejandra| Dominguez | 20941009 | mdominguez.conservatorio@gmail.com | https://github.com/Mdominguez1969 | Ética. |
+| Valeria Nieves | Villalba | 26970862 | vnvillalba@escuelasproa.edu.ar | https://github.com/Nieves862  | Base de datos. |
+| Leandro | Sanchez | 38503454 | leandrosanchez.net@gmail.com | https://github.com/LeandroSanchez94 | Pseudocodigo. |
+| Gabriel | Vargas Salas | 32204604 | gabrielvargasds25@gmail.com | https://github.com/GabrielVargasds | Descripción y equipo. |
+| Sabrina Ximena | Rivadera | 1111111 | srivadera@gmail.com| https://github.com/SabriRivadera |Todavía no logramos reunirnos para esta evidencia.  |
+| Andra Paola | Testa | 11111111 | andreaptesta@gmail.com | https://github.com/PaoTes | Se suma al equipo el semestre siguiente por tener equivalencias aprobadas para este. |
 
 
 # Introducción a la Programación
