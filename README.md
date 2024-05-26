@@ -10,7 +10,7 @@
 | Mónica Alejandra| Dominguez | 20941009 | mdominguez.conservatorio@gmail.com | https://github.com/Mdominguez1969 | Ética. |
 | Valeria Nieves | Villalba | 26970862 | vnvillalba@escuelasproa.edu.ar | https://github.com/Nieves862  | Base de datos. |
 | Leandro | Sanchez | 38503454 | leandrosanchez.net@gmail.com | https://github.com/LeandroSanchez94 | Pseudocodigo. |
-| Gabriel | Vargas Salas | 32204604 | gabrielvargasds25@gmail.com | https://github.com/GabrielVargasds | Descripción y equipo. |
+| Gabriel | Vargas Salas | 32204604 | gabrielvargasds25@gmail.com | https://github.com/GabrielVargasds | Descripción y Equipo. |
 | Sabrina Ximena | Rivadera | 1111111 | srivadera@gmail.com| https://github.com/SabriRivadera |Todavía no logramos reunirnos para esta evidencia.  |
 | Andra Paola | Testa | 11111111 | andreaptesta@gmail.com | https://github.com/PaoTes | Se suma al equipo el semestre siguiente por tener equivalencias aprobadas para este. |
 
@@ -27,10 +27,10 @@ El servicio contará con un **sistema de alerta temprana** del estado de los alu
 
 ### 💡 Motivación del Proyecto
 
-Decidimos esta temática aprovechando la experiencia y los problemas que atraviesan las docentes del equipo al hacer uso de los sistemas actuales, del equipo completo participando como alumnos, como de padres y madres que necesitan alternativas eficaces al momento de conocer las notas de sus hijos/as.
+Decidimos esta temática aprovechando la experiencia y los problemas que atraviesan hoy las docentes compañeras del equipo al hacer uso de los sistemas actuales, del equipo completo participando como Alumnos, Padres y Madres que necesitan alternativas eficaces, claras y rápidas al momento de conocer las notas o calificaciones de sus hijos/as.
 
 ### 🔍 Identificación de Problemas y Oportunidades
 
-- **Ubicamos que es un problemas actual palpable en instituciones educativas que conocemos y una necesidad de mejora**
+- **Ubicamos que es un problema actual palpable en instituciones educativas que conocemos y una necesidad de mejora**
 - **Oportunidad de mejora de la sociedad** al poder validar esta solución en nuestra comunidad.
 - **Oportunidad de negocio**, brindando la opción desarrollada a instituciones educativas privadas de diferentes disciplinas.
