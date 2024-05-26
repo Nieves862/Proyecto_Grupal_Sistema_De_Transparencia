@@ -1,13 +1,13 @@
 Algoritmo Menu_principal
 	Escribir 'Bienvenido al software de gestion de estudiantes'
-  Escribir ""
+        Escribir ""
 	Escribir '1. Gestionar estudiantes'
 	Escribir '2. Gestionar materias'
 	Escribir '3. Gestionar calificaciones'
 	Escribir '4. Gestionar asistencia'
 	Escribir '5. Consultas'
 	Escribir '6. Salir'
-  Escribir ""
+        Escribir ""
 	Escribir 'Por favor, elija la opcion deseada'
 	Leer num
 	Según num Hacer
