@@ -21,7 +21,7 @@
 
 ## 📝 Descripción:
 
-La propuesta elegida es un sistema de transparencia educativa, que beneficie a **alumnos, padres y madres, maestros/as** y a la **dirección de instituciones educativas**, facilitando la calificación de diferentes aspectos de alumnos hacia docentes y viceversa. Este sistema permite conocer las notas de los hijos/as de forma sencilla y a las instituciones conseguir un panorama general de la calidad educativa.
+La propuesta elegida es un sistema de transparencia educativa, que beneficie a **Alumnos, Padres y Madres, Maestros/as** y a la **Dirección de Instituciones Educativas**, facilitando la nota calificativa evaluativa o formativa en diferentes aspectos, pensamos del Docente hacia el Alumno y también viceversa. Este sistema permite conocer las Notas de los Hijos/as de forma sencilla, práctica y rapida, así las instituciones podrían brindar un panorama general de la Calidad Educativa.
 
 El servicio contará con un **sistema de alerta temprana** del estado de los alumnos para evitar o reducir situaciones de deserción. Esto se implementará a través de **algoritmos de aprendizaje automático** que permitirán predecir la tendencia de estas situaciones y contará con **procesamiento del lenguaje natural** aplicado al texto para analizar los sentimientos de los comentarios de las encuestas que se enviarán para medir la satisfacción educativa.
 
