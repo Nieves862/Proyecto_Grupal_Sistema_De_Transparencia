@@ -1,4 +1,4 @@
-# proyecto_grupal_g_e
+# Proyecto_Grupal_G_E
 
 # Evidencia 2 - Módulo Programador - TSCDIA - 2024
 
