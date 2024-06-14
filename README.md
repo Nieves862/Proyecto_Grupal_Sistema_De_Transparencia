@@ -11,9 +11,6 @@
 | Valeria Nieves | Villalba | 26970862 | vnvillalba@escuelasproa.edu.ar | https://github.com/Nieves862  | Base de datos. |
 | Leandro | Sanchez | 38503454 | leandrosanchez.net@gmail.com | https://github.com/LeandroSanchez94 | Pseudocodigo. |
 | Gabriel | Vargas Salas | 32204604 | gabrielvargasds25@gmail.com | https://github.com/GabrielVargasds | Descripción y Equipo. |
-| Sabrina Ximena | Rivadera | 1111111 | srivadera@gmail.com| https://github.com/SabriRivadera |Todavía no logramos reunirnos para esta evidencia.  |
-| Andra Paola | Testa | 11111111 | andreaptesta@gmail.com | https://github.com/PaoTes | Se suma al equipo el semestre siguiente por tener equivalencias aprobadas para este. |
-
 
 # Introducción a la Programación
 
