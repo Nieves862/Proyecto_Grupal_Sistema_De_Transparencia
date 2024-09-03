@@ -35,3 +35,5 @@ Decidimos esta temática aprovechando la experiencia y los problemas que atravie
 - **Ubicamos que es un problema actual palpable en instituciones educativas que conocemos y una necesidad de mejora**
 - **Oportunidad de mejora de la sociedad** al poder validar esta solución en nuestra comunidad.
 - **Oportunidad de negocio**, brindando la opción desarrollada a instituciones educativas privadas de diferentes disciplinas.
+
+  La metodología de trabajo será a través de grupos de whatsapp, videoconferencias, google drive y Git hub. Al no pertenecer todos a la misma zona geográfica intentamos usar la tecnología para acercar ideas, propuestas que nos permitan realizar nuestro trabajo. Día por medio nos reunión por conferencia virtual en los horarios que estemos todos, además de tener constante contacto por whatsapp. Cada uno aporta soluciones a los problemas y quien tiene la idea más completa lo comienza y el resto presta apoyo, todos tramos de mantener comunicación constante para seguir el hilo. Se han hecho algunas reuniones físicas con la mayoría de los miembros que pudieron presentarse y el resto se ha hecho presente por medios virtuales.
