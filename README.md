@@ -13,6 +13,8 @@ ________________________________________________________________________________
 | Valeria Nieves | Villalba | 26970862 | vnvillalba@escuelasproa.edu.ar | https://github.com/Nieves862  | Base de datos. |
 | Leandro | Sanchez | 38503454 | leandrosanchez.net@gmail.com | https://github.com/LeandroSanchez94 | Pseudocodigo. |
 | Gabriel | Vargas Salas | 32204604 | gabrielvargasds25@gmail.com | https://github.com/GabrielVargasds | Descripción y Equipo. |
+| Andrea Paola | Testa | 25442630 | andreaptesta@gmail.com | https://github.com/PaoTes | ** |
+
 
 # Introducción a la Programación
 
