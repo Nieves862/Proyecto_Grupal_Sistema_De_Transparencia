@@ -2,10 +2,10 @@ ________________________________________________________________________________
 # Proyecto_Grupal_G_E
 ___________________________________________________________________________________________________________________________
 
-# Evidencia I - Módulo Programador - TSCDIA - 2024
+# Evidencia I - Módulo | Innovación de DATOS | - TSCDIA - 2024
 
 
-## 👥 Integrantes del Grupo 15
+## 👥 Colaboradores del Grupo 15:
 
 | Nombre | Apellido | DNI | E-mail            | Link | Actividad   |
 |--------|----------|-----|-------------------|------|-------------|
@@ -16,21 +16,21 @@ ________________________________________________________________________________
 | Andrea Paola | Testa | 25442630 | andreaptesta@gmail.com | https://github.com/PaoTes | ** |
 
 
-# Introducción a la Programación
+#- Innovación de DATOS | Programación I | Base de Datos II -
 
 ## 📚 Proyecto: Sistema de Transparencia Educativa
 
 ## 📝 Descripción:
 
-La propuesta elegida es un sistema de transparencia educativa, que beneficie a **Alumnos, Padres y Madres, Maestros/as** y a la **Dirección de Instituciones Educativas**, facilitando la nota calificativa evaluativa o formativa en diferentes aspectos, pensamos del Docente hacia el Alumno y también viceversa. Este sistema permite conocer las Notas de los Hijos/as de forma sencilla, práctica y rapida, así las instituciones podrían brindar un panorama general de la Calidad Educativa.
+  La propuesta elegida es un sistema de transparencia educativa, que beneficie a **Alumnos, Padres y Madres, Maestros/as** y a la **Dirección de Instituciones Educativas**, facilitando la nota calificativa evaluativa o formativa en diferentes aspectos, pensamos del Docente hacia el Alumno y también viceversa. Este sistema permite conocer las Notas de los Hijos/as de forma sencilla, práctica y rapida, así las instituciones podrían brindar un panorama general de la Calidad Educativa.
 
-El servicio contará con un **sistema de alerta temprana** del estado de los alumnos para evitar o reducir situaciones de deserción. Esto se implementará a través de **algoritmos de aprendizaje automático** que permitirán predecir la tendencia de estas situaciones y contará con **procesamiento del lenguaje natural** aplicado al texto para analizar los sentimientos de los comentarios de las encuestas que se enviarán para medir la satisfacción educativa.
+  El servicio contará con un **sistema de alerta temprana** del estado de los alumnos para evitar o reducir situaciones de deserción. Esto se implementará a través de **algoritmos de aprendizaje automático** que permitirán predecir la tendencia de estas situaciones y contará con **procesamiento del lenguaje natural** aplicado al texto para analizar los sentimientos de los comentarios de las encuestas que se enviarán para medir la satisfacción educativa.
 
-### 💡 Motivación del Proyecto
+### 💡 Motivación del Proyecto:
 
-Decidimos esta temática aprovechando la experiencia y los problemas que atraviesan hoy las docentes compañeras del equipo al hacer uso de los sistemas actuales, del equipo completo participando como Alumnos, Padres y Madres que necesitan alternativas eficaces, claras y rápidas al momento de conocer las notas o calificaciones de sus hijos/as.
+  Decidimos esta temática aprovechando la experiencia y los problemas que atraviesan hoy las docentes compañeras del equipo al hacer uso de los sistemas actuales, del equipo completo participando como Alumnos, Padres y Madres que necesitan alternativas eficaces, claras y rápidas al momento de conocer las notas o calificaciones de sus hijos/as.
 
-### 🔍 Identificación de Problemas y Oportunidades
+### 🔍 Identificación de Problemas y Oportunidades:
 
 - **Ubicamos que es un problema actual palpable en instituciones educativas que conocemos y una necesidad de mejora**
 - **Oportunidad de mejora de la sociedad** al poder validar esta solución en nuestra comunidad.
