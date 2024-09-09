@@ -1,40 +1,75 @@
+# Importamos la función 'get_db_connection' del módulo 'database' para conectarnos a la base de datos
 from database import get_db_connection
+from datetime import datetime
+from captcha import generar_captcha
 
+def calcular_edad(f_nacimiento):
+    hoy = datetime.today()
+    edad_estudiante = hoy.year - f_nacimiento.year - ((hoy.month, hoy.day) < (f_nacimiento.month, f_nacimiento.day))
+    return edad_estudiante
+
+ # Creamos la funcion crear estudiantes
 def crear_estudiante():
-    conexion = get_db_connection()
-    cursor = conexion.cursor()
+    # Obtenemoss la conexión a la base de datos
+    conexion = get_db_connection() #llamo variable conexion a la conexion con la base de datos
+    cursor = conexion.cursor()  # Creamos el llamado cursor usado para interactuar con la base de datos
 
+    # Solicitamos que se ingrese los datos del estudiante
     apellido = input("Ingrese el apellido del estudiante: ")
     nombre = input("Ingrese el nombre del estudiante: ")
     email = input("Ingrese el email del estudiante: ")
     dni = input("Ingrese el DNI del estudiante: ")
-    fecha_nacimiento = input("Ingrese la fecha de nacimiento del estudiante (YYYY-MM-DD): ")
-    edad = int(input("Ingrese la edad del estudiante: "))
+    fecha_nacimiento_str = input("Ingrese la fecha de nacimiento del estudiante (AAAA-MM-DD): ")
+    try:
+        fecha_nacimiento = datetime.strptime(fecha_nacimiento_str, "%Y-%m-%d")
+    except ValueError:
+        print("Formato de fecha inválido. Por favor, ingrese la fecha en el formato (AAAA-MM-DD): ")
+        exit()
+    edad = calcular_edad(fecha_nacimiento)
+    print (f"{edad} años." )
     telefono = input("Ingrese el teléfono del estudiante: ")
     direccion = input("Ingrese la dirección del estudiante: ")
     localidad = input("Ingrese la localidad del estudiante: ")
     provincia = input("Ingrese la provincia del estudiante: ")
 
-    consulta = """
-        INSERT INTO cuarto_año (Apellido, Nombre, E_mail, DNI, Fecha_De_Nacimiento, Edad, Teléfono, Direccion, Localidad, Provincia)
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-    """
-    cursor.execute(consulta, (apellido, nombre, email, dni, fecha_nacimiento, edad, telefono, direccion, localidad, provincia))
-    conexion.commit()
+    while True:
+        if generar_captcha():
+            print("¡CAPTCHA correcto! Usuario creado exitosamente.")
+            # Aquí agregarías la lógica para crear el regsitro de alumnos en la base de datos
+            #Definimos una consulta como una cadena de texto con ""
+            #Luego realizamos una operacion de Insert en la tabla cuart_año y especifiamos las columnas a rellenar con los datos
+            #Despus introducimos los marcadores de posicion con %s
+            consulta = """
+                INSERT INTO cuarto_año (Apellido, Nombre, E_mail, DNI, Fecha_De_Nacimiento, Edad, Teléfono, Direccion, Localidad, Provincia)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s) 
+            """
+            # Ejecutamos la consulta con los datos proporcionados, los datos que ingresamos
+            cursor.execute(consulta, (apellido, nombre, email, dni, fecha_nacimiento, edad, telefono, direccion, localidad, provincia))
+            conexion.commit()  # Confirmamos los cambios en la base de datos
 
-    print("Estudiante creado exitosamente!")
-    cursor.close()
-    conexion.close()
+            print("Estudiante creado exitosamente!") #mostramos mensaje cuando finalizamos bien la ooperacion
+            cursor.close()  # Cerramos el cursor creado para interactuar con la base de datos
+            conexion.close()  # Cerramos la conexión a la base de datos
+            break
+        else:
+            print("CAPTCHA incorrecto. Intenta nuevamente o escribe 'salir' para abandonar.")
+            if input("¿Deseas continuar? (si/no): ").lower() != 'si':
+                break
 
+
+#Creamos una nueva funcion para consultar estudiantes
 def consultar_estudiante():
+    # Obtenemos la conexión a la base de datos
     conexion = get_db_connection()
-    cursor = conexion.cursor()
+    cursor = conexion.cursor()  # Llamamos nuevamente cursor a la interaccion con la base de datos
 
-    id_estudiante = input("Ingrese el ID del estudiante a consultar: ")
-    consulta = "SELECT * FROM cuarto_año WHERE ID_ESTUDIANTE = %s"
-    cursor.execute(consulta, (id_estudiante,))
-    estudiante = cursor.fetchone()
+    # Solicitar el ID del estudiante que quiero conocer los datos
+    id_estudiante = input("Ingrese el ID del estudiante a consultar: ") #habilito con el input el ingreso del ID del estudiante
+    consulta = "SELECT * FROM cuarto_año WHERE ID_ESTUDIANTE = %s"  # Definimos la consulta para obtener de cuarto_año segun el ID del estudiante a partir del marcador ingresado %s
+    cursor.execute(consulta, (id_estudiante,))  # Ejecutams la consulta con el ID ingresado por el usuario con el input
+    estudiante = cursor.fetchone()  # Obtenemos el resultado de la consulta con fetchone que devuelve una sola fila si encuentra coincidencia con el ID ingresado, sino devuelve None
 
+    # Si se encuentra el estudiante, deberia mostrar sus datos
     if estudiante:
         print(f"ID: {estudiante[0]}")
         print(f"Apellido: {estudiante[1]}")
@@ -50,19 +85,25 @@ def consultar_estudiante():
     else:
         print("No se encontró estudiante con ese ID.")
     
-    cursor.close()
-    conexion.close()
+    cursor.close()  # Cerramos el cursor que sirve de interaccion con la base de datos
+    conexion.close()  # Cerramos lla conexión a la base de datos
 
+
+#creamos la fucion para actualizar estudiante
 def actualizar_estudiante():
+    # Hacemos la conexión a la base de datos
     conexion = get_db_connection()
-    cursor = conexion.cursor()
+    cursor = conexion.cursor()  # Creamos una interaccion con la base datos llamada habitualmente cursor
 
+    # Solicitaoms el ID del estudiante al usuario
     id_estudiante = input("Ingrese el ID del estudiante a actualizar: ")
 
-    consulta = "SELECT * FROM cuarto_año WHERE ID_ESTUDIANTE = %s"
-    cursor.execute(consulta, (id_estudiante,))
-    resultado = cursor.fetchone()
+    consulta = "SELECT * FROM cuarto_año WHERE ID_ESTUDIANTE = %s"  # Definimos la consulta como obtener de cuarto_año el ID del estudiante a partir del marcador ingresado %s
+    cursor.execute(consulta, (id_estudiante,))  # Ejecuta la consulta con el ID proporcionado en el input
+    resultado = cursor.fetchone()  #  Obtenemos el resultado de la consulta con fetchone que devuelve una sola fila si encuentra coincidencia con el ID ingresado, sino devuelve None
 
+
+    # Si se encuentra el estudiante con el id, solicitamos nuevos datos para actualizar, sino quiero actualizar le doy enter para seguir
     if resultado:
         apellido = input("Ingrese el nuevo apellido del estudiante (o presione Enter para no cambiar): ")
         nombre = input("Ingrese el nuevo nombre del estudiante (o presione Enter para no cambiar): ")
@@ -75,13 +116,17 @@ def actualizar_estudiante():
         localidad = input("Ingrese la nueva localidad del estudiante (o presione Enter para no cambiar): ")
         provincia = input("Ingrese la nueva provincia del estudiante (o presione Enter para no cambiar): ")
 
+        #Definimos una consulta como una cadena de texto con ""
+        #Luego realizamos una operacion de Update para actualizar en la tabla cuart_año y especifiamos las columnas a rellenar con los datos
+        #Despus introducimos los marcadores de posicion con %s
         consulta_actualizar = """
             UPDATE cuarto_año
             SET Apellido = %s, Nombre = %s, E_mail = %s, DNI = %s, Fecha_De_Nacimiento = %s, Edad = %s, Teléfono = %s, Direccion = %s, Localidad = %s, Provincia = %s
             WHERE ID_ESTUDIANTE = %s
         """
-        cursor.execute(consulta_actualizar, (
-            apellido if apellido else resultado[1],
+        # Ejecuta la consulta actualizar con dos argumentos, el primero es la consulta a actualizar y el segundo una tupla
+        cursor.execute(consulta_actualizar, ( # usamos una expresion condicional para determinar que valor usaremos
+            apellido if apellido else resultado[1], # si ingresamos un nuevo apellido, usamos ese apellido sino, si deje el espacio vacio, se mantiene el valor que tenia en resultado, obtenido de la base de datos
             nombre if nombre else resultado[2],
             email if email else resultado[3],
             dni if dni else resultado[4],
@@ -91,43 +136,50 @@ def actualizar_estudiante():
             direccion if direccion else resultado[8],
             localidad if localidad else resultado[9],
             provincia if provincia else resultado[10],
-            id_estudiante
+            id_estudiante #ultimo valor de mi tupla que indica que alimno actualizar
         ))
-        conexion.commit()
+        conexion.commit()  # Confirmamos los cambios en la base de datos
         print("Estudiante actualizado exitosamente!")
     else:
         print(f"No se encontró estudiante con el ID: {id_estudiante}")
 
-    cursor.close()
-    conexion.close()
+    cursor.close()  # Cerramos el cursor
+    conexion.close()  # Cerramos la conexión a la base de datos
 
+
+#Creamos la funcion para eliminar datos del estudiante
 def eliminar_estudiante():
+    # Hacemos la conexión a la base de datos
     conexion = get_db_connection()
-    cursor = conexion.cursor()
+    cursor = conexion.cursor()  # Creamos una interaccion con la base datos llamada habitualmente cursor
 
+    # Solicitamos el ID del estudiante al usuario que ingrese
     id_estudiante = input("Ingrese el ID del estudiante a eliminar: ")
 
-    consulta = "SELECT * FROM cuarto_año WHERE ID_ESTUDIANTE = %s"
-    cursor.execute(consulta, (id_estudiante,))
-    resultado = cursor.fetchone()
+    consulta = "SELECT * FROM cuarto_año WHERE ID_ESTUDIANTE = %s"  # Definimos la consulta como obtener de cuarto_año el ID del estudiante a partir del marcador ingresado %s
+    cursor.execute(consulta, (id_estudiante,)) # Ejecuta la consulta con el ID proporcionado en el input anterior
+    resultado = cursor.fetchone()  # Obtener el resultado de la consulta
 
-    if resultado:
-        confirmar = input(f"¿Está seguro de eliminar al estudiante {resultado[1]} {resultado[2]} (S/N): ")
-        if confirmar.upper() == "S":
-            consulta_eliminar = "DELETE FROM cuarto_año WHERE ID_ESTUDIANTE = %s"
-            cursor.execute(consulta_eliminar, (id_estudiante,))
-            conexion.commit()
+    # Si se encuentra el estudiante, confirmar la eliminación
+    if resultado: #Verificamos la variable resultado, si encuentra un id que coincida con id_estudiante, sino devolveria None
+        confirmar = input(f"¿Está seguro de eliminar al estudiante {resultado[1]} {resultado[2]} (S/N): ") #preguntamos si queremos confirmar la eliminacion, usamos f  para consultar sobre resultado 1 y 2 que son el  apellido y nombre
+        if confirmar.upper() == "S":  #Pedimos una S para decir Si y confirmar
+            consulta_eliminar = "DELETE FROM cuarto_año WHERE ID_ESTUDIANTE = %s"  # creamos la Consulta SQL para eliminar al estudiante usando DElete en cuarto_año si en el ID elegido
+            cursor.execute(consulta_eliminar, (id_estudiante,))  # Ejecutams la consulta con el ID proporcionado para eliminarlo
+            conexion.commit()  # Confirmamos los cambios en la base de datos
             print("Estudiante eliminado exitosamente!")
         else:
             print("Eliminación cancelada.")
     else:
         print(f"No se encontró estudiante con el ID: {id_estudiante}")
 
-    cursor.close()
-    conexion.close()
+    cursor.close()  # Cerramos el cursor
+    conexion.close()  # Cerrar=mos la conexión a la base de datos
 
+#creamos la fucion gestionar estudiantes para crear un menu de opciones
 def gestionar_estudiantes():
-    while True:
+    # Bucle infinito para gestionar las opciones del menú de estudiantes
+    while True: #Se va a ejecutar el menu de opciones mientras sea True y hasta encontrarse con un break
         print("\nGestión de Estudiantes")
         print("========================")
         print("1. Registrar estudiante")
@@ -137,8 +189,9 @@ def gestionar_estudiantes():
         print("5. Volver al menú principal")
         print("========================")
 
-        opcion = input("Ingrese la opción deseada: ")
+        opcion = input("Ingrese la opción deseada: ") # Pedimos ingresar una opcion
 
+        # Ejecutar la función correspondiente según la opción seleccionada
         if opcion == "1":
             crear_estudiante()
         elif opcion == "2":
