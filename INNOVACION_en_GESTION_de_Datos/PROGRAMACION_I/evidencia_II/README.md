@@ -18,7 +18,7 @@ ________________________________________________________________________________
 
 #- Innovación en gestión de Datos | Programación I | Base de Datos II -
 
-## 📚 Introducción a POO y Uso de Archivos en Pythom
+## 📚 Introducción a POO y Uso de Archivos en Python
 
 ## 📝 Descripción:
  Se realizó la creación de un CRUD en Python para el manejo y control de Usuarios, según lo especificado en la documentación proporcionada para la actual evidencia.
