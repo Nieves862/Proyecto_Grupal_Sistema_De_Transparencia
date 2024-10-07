@@ -2,7 +2,7 @@ ________________________________________________________________________________
 # Proyecto_Grupal_Sistema_de_Transparencia
 ___________________________________________________________________________________________________________________________
 
-# Evidencia I - Módulo | Innovación de DATOS | - TSCDIA - 2024
+# Evidencia II - Módulo | Innovación en Gestión de Dados | - TSCDIA - 2024
 
 
 ## 👥 Colaboradores del Grupo 15:
@@ -16,24 +16,39 @@ ________________________________________________________________________________
 | Andrea Paola | Testa | 25442630 | andreaptesta@gmail.com | https://github.com/PaoTes | ** |
 
 
-#- Innovación de DATOS | Programación I | Base de Datos II -
+#- Innovación en gestión de Datos | Programación I | Base de Datos II -
 
-## 📚 Proyecto: Sistema de Transparencia Educativa
+## 📚 Introducción a POO y Uso de Archivos en Pythom
 
 ## 📝 Descripción:
+ Se realizó la creación de un CRUD en Python para el manejo y control de Usuarios, según lo especificado en la documentación proporcionada para la actual evidencia.
+ 
+## 🔶 Ejecución y testeo del Programa:
 
-  La propuesta elegida es un sistema de transparencia educativa, que beneficie a **Alumnos, Padres y Madres, Maestros/as** y a la **Dirección de Instituciones Educativas**, facilitando la nota calificativa evaluativa o formativa en diferentes aspectos, pensamos del Docente hacia el Alumno y también viceversa. Este sistema permite conocer las Notas de los Hijos/as de forma sencilla, práctica y rapida, así las instituciones podrían brindar un panorama general de la Calidad Educativa.
+### ⚙️ Requisitos previos:
+     ✔️ Nos aseguramos de tener instalado Python
+     
+### ⚙️ Lista de los archivos que tenemos que tener:
+     🗂️ usuario.py:  Para definir las clases Usuario y Acceso.
+     🗂️ manejoc.py: Contiene la clase Sistema con las operaciones para gestionar los usuarios.
+     🗂️ database.py: para la conexión a una base de datos.
+     🗂️ Menu1.py: con el menú principal
+     🗂️ Los otros archivos que se piden usuarios.ispc y accesos.ispc se generarán automáticamente al ejecutar el programa y guardar datos.
+     
+### ⚙️ Pasos para ejecutar:
 
-  El servicio contará con un **sistema de alerta temprana** del estado de los alumnos para evitar o reducir situaciones de deserción. Esto se implementará a través de **algoritmos de aprendizaje automático** que permitirán predecir la tendencia de estas situaciones y contará con **procesamiento del lenguaje natural** aplicado al texto para analizar los sentimientos de los comentarios de las encuestas que se enviarán para medir la satisfacción educativa.
+    ✔️ Fijarse que todos los archivos mencionados anteriormente estén en la misma carpeta. 
+    ✔️ Abrimos una terminal o línea de comandos en esa carpeta.
+    ✔️ Una vez en la terminal y dentro de la ubicación de los archivos ejecutamos el archivo principal que contiene la función main(), el cual se encuentra en el archivo menu1.py.
+    ✔️ Introducimos Python menu1.py. 
+    ✔️ Se siguieron las instrucciones del menú para agregar, modificar, eliminar o buscar usuarios, y probar el resto de las funcionalidades.
 
-### 💡 Motivación del Proyecto:
+## 🔶¿Qué inconvenientes han tenido y si lograron superarlos?
 
-  Decidimos esta temática aprovechando la experiencia y los problemas que atraviesan hoy las docentes compañeras del equipo al hacer uso de los sistemas actuales, del equipo completo participando como Alumnos, Padres y Madres que necesitan alternativas eficaces, claras y rápidas al momento de conocer las notas o calificaciones de sus hijos/as.
+### ⚙️ Fallas por errores u omisiones.
 
-### 🔍 Identificación de Problemas y Oportunidades:
+    ⚠️ Nos faltaba importar librerías o funciones de forma correcta.
+    ⚠️ Al querer registrar accesos exitosos y fallidos generando el registro en logs.txt usuarios.ispc  o accesos.ispc, arrojaba error,  por falta de importación de librerías
+    ⚠️ Fallaba la conexión de ña base de datos por falta de mysql.connector
+    ⚠️ Por errores de tipeo no lográbamos encontrar problemas de funcionamiento de los scripts.
 
-- **Ubicamos que es un problema actual palpable en instituciones educativas que conocemos y una necesidad de mejora**
-- **Oportunidad de mejora de la sociedad** al poder validar esta solución en nuestra comunidad.
-- **Oportunidad de negocio**, brindando la opción desarrollada a instituciones educativas privadas de diferentes disciplinas.
-
-  La metodología de trabajo será a través de grupos de whatsapp, videoconferencias, google drive y Git hub. Al no pertenecer todos a la misma zona geográfica intentamos usar la tecnología para acercar ideas, propuestas que nos permitan realizar nuestro trabajo. Día por medio nos reunión por conferencia virtual en los horarios que estemos todos, además de tener constante contacto por whatsapp. Cada uno aporta soluciones a los problemas y quien tiene la idea más completa lo comienza y el resto presta apoyo, todos tramos de mantener comunicación constante para seguir el hilo. Se han hecho algunas reuniones físicas con la mayoría de los miembros que pudieron presentarse y el resto se ha hecho presente por medios virtuales.
