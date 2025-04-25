@@ -1,0 +1,29 @@
+Algoritmo Menu_principal
+	Escribir 'Bienvenido al software de gestion de estudiantes'
+        Escribir ""
+	Escribir '1. Gestionar estudiantes'
+	Escribir '2. Gestionar materias'
+	Escribir '3. Gestionar calificaciones'
+	Escribir '4. Gestionar asistencia'
+	Escribir '5. Consultas'
+	Escribir '6. Salir'
+        Escribir ""
+	Escribir 'Por favor, elija la opcion deseada'
+	Leer num
+	Según num Hacer
+		1:
+			Escribir 'Redirige a gestión de estudiantes'
+		2:
+			Escribir 'Redirige a gestión de materias'
+		3:
+			Escribir 'Redirige a gestión de calificaciones'
+		4:
+			Escribir 'Redirige a gestión de asistencias'
+		5:
+			Escribir 'Redirige a consultas'
+		6:
+			Escribir 'Sale de la sesión'
+		De Otro Modo:
+			Escribir 'Por favor, ingrese una opcion valida'
+	FinSegún
+FinAlgoritmo
