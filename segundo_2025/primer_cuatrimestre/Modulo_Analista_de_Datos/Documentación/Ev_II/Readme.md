@@ -44,7 +44,9 @@ Analizar el nivel de alfabetización y asistencia educativa de la población en 
 
 ## 🧑‍🤝‍🧑 Equipo de Trabajo
 
-● Valeria N. VillalbaMónica Dominguez
+● Valeria N. Villalba
+
+● Mónica Dominguez
 
 ● Leandro Sánchez
 
