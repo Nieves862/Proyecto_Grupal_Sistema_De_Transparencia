@@ -1,0 +1,15 @@
+Este proyecto implementa un sistema de visualización de productos con estadísticas dinámicas y una arquitectura modular.
+
+Estadísticas agregadas:
+Se incorporaron métricas clave para analizar los productos, incluyendo identificación del producto más caro y más barato (mostrando nombre y precio en cada caso), conteo de productos con títulos extensos (más de 20 caracteres),
+cálculo del valor total acumulado de todos los productos, promedio de descuentos aplicados, puntuación promedio de valoraciones, sumatoria total de unidades en stock y detección del producto con mayor inventario disponible.
+Todas estas estadísticas se actualizan automáticamente al aplicar cualquier filtro de búsqueda.
+
+Estructura de componentes:
+La aplicación se organizó en componentes especializados para mantener un código limpio y mantenible. El componente ProductCard se encarga de mostrar la información individual de cada producto, incluyendo su imagen, título,
+precio y detalles. ProductList gestiona la visualización completa de todos los productos, manejando tanto el estado de carga como los casos donde no hay resultados.
+ProductFilters contiene todos los controles interactivos para filtrar y buscar productos. Finalmente, StatsPanel presenta las estadísticas calculadas en un formato claro y organizado.
+
+Cada componente fue diseñado para ser independiente y reutilizable, recibiendo sus datos mediante propiedades (props) y manteniendo su propia lógica de presentación.
+Esta estructura modular permite que las diferentes partes de la aplicación puedan modificarse o mejorarse independientemente, facilitando el mantenimiento y la escalabilidad del proyecto.
+La comunicación entre componentes se gestiona a través del componente principal App.jsx, que coordina el estado general y el flujo de datos.
