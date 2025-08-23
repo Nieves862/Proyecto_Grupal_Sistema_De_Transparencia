@@ -1,0 +1,49 @@
+# Tabla de Contenido ABP
+----------------------------------
+
+2- Tipo de Proyecto	                            4
+3-  Espacio Curricular	                        5
+5- Problemáticas / Necesidades	                6
+6- Fundamentación	                              7
+7- Visión del Proyecto	                        8
+7.1- Diseño de Objetivos	                      8
+7.1.1- Objetivos Generales	                    8
+7.1.2- Objetivos Específicos	                  9
+7.1.3- Metas	                                  9
+8- Selección de Acciones	                      10
+9- Cronograma	                                  11
+9.1.1- Datos Ausentes	                          12
+Ejemplo 1: Valores null en columnas numéricas	  12
+Ejemplo 2: Celdas completamente vacías	        12
+9.1.2 Datos en Formato Incorrecto	              13
+Ejemplo 1: Fechas en columnas numéricas	        13
+Ejemplo 2: Texto en columnas numéricas	        14
+9.1.3- Datos Erróneos	                          14
+Ejemplo 1: Valores inconsistentes en totales	  15
+Ejemplo 2: Valores atípicos extremos	          15
+9.1.4- Datos Duplicados	                        16
+Ejemplo 1: Filas completamente duplicadas	      16
+Ejemplo 2: Duplicados parciales con variaciones menores	            16
+9.2- Visualizaciones con Matplotlib	                                17
+9.2.1- Gráfico 1: Distribución de Alfabetización por Grupos de Edad	17
+9.2.2- Gráfico 2: Top 10 Departamentos por Población Universitaria	19
+9.2.3- Gráfico 3: Comparación de Niveles Educativos	                20
+9.2.4- Gráfico 4: Relación entre Asistencia y Alfabetización	      22
+9.3- Medidas Descriptivas	                                          24
+9.3.1- Variables Numéricas	                                        24
+9.3.1.1- Análisis de Alfabetización	                                24
+9.3.1.2- Análisis de Niveles Educativos	                            25
+9.3.2- Variables Categóricas	                                      26
+9.4- Informe de Simetría y Asimetría	                              27
+Análisis de Distribuciones	                                        27
+9.5- Conclusiones del Análisis	                                    28
+Hallazgos Principales	                                              28
+Recomendaciones para Políticas Públicas	                            28
+10 - Producto Final	                                                29
+10.1- Descripción del Producto:	                                    29
+10.1.1- Componentes del Producto:	                                  29
+10.1.2- Espacios Curriculares Involucrados:	                        29
+10.2- Vinculación con la Comunidad:	                                29
+11- Bibliografía	                                                  30
+
+
