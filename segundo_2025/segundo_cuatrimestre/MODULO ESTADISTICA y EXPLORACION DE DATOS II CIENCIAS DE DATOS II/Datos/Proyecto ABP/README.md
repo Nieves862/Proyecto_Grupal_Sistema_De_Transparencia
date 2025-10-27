@@ -111,10 +111,15 @@ Optimizar la rentabilidad y gestión operativa hotelera mediante el análisis pr
 
 ---
 
-## 📚 Fuente
+## 📚 Fuente Bibliografía
+
 Instituto Politécnico Superior Córdoba – [www.ispc.edu.ar](https://www.ispc.edu.ar)
 
+---
 
+## 🧠 Achivos  del Análisis
 
-
-***
+- [analisis.ipynb](https://github.com/user-attachments/files/23154251/analisis.ipynb)
+- [hotel.csv](https://github.com/user-attachments/files/23154273/hotel.csv)
+  
+---
